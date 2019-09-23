@@ -1,0 +1,60 @@
+.btn {
+  &,  
+  &:link,
+  &:visited {
+    display: inline-block;
+    transition: all .3s;
+    padding: 1.6rem 4rem;
+    border-radius: 2.7rem;
+    border: 0;
+
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: $white;
+  }
+  
+  &:hover,
+  &:focus {
+    transform: translateY(-3px)
+  }
+  
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+
+.btn--green {
+  margin-top: 7rem;
+  background-color: $green;
+}
+.buttom-arrow {
+  background: url(../image/buttom-arrow.svg) no-repeat center;
+  width: 2.5rem;
+  height: 0.58rem;
+  display: inline-block;
+  margin-left: 1.4rem;
+
+  @include respond(phone) { // width < 600?
+    width: 3.5rem;
+    
+	}
+}
+
+.btn--example-services {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: $green;
+  background: #fff;
+  border: 1px solid $green;
+  cursor: pointer;
+}

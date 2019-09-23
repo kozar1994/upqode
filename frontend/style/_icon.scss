@@ -1,0 +1,114 @@
+// Thanks to codepen.io/alaingalvan for suggesting this color variable:
+$background: hsl(210, 45, 10);
+
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  // padding: 8px; // IE8
+  // padding: 0.8rem;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 12px; // IE8
+    margin: 0.2rem;
+  }
+  a,
+  svg {
+    display: block;
+  }
+  a {
+    position: relative; // IE8
+    height: 46px; // IE8
+    height: 4.6rem;
+    width: 46px; // IE8
+    width: 4.6rem;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+  .social__item {
+    height: 36px; // IE8
+    height: 3.6rem;
+    width: 36px; // IE8
+    width: 3.6rem;
+  }
+}
+
+%social-icon-hover {
+  border-radius: 100%;
+  color: $background; // IE8
+  fill: $background;
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+}
+
+%social-icon-hover-git {
+  border-radius: 100%;
+  color: #fff; // IE8
+  fill: #fff;
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+}
+.icon-8 {
+  color: rgb(244, 80, 66); // IE8
+  fill: rgb(244, 80, 66);
+  &:hover {
+    background: rgb(244, 80, 66);
+    @extend %social-icon-hover;
+  }
+}
+.icon-10 {
+  color: rgb(59, 89, 152); // IE8
+  fill: rgb(59, 89, 152);
+  &:hover {
+    background: rgb(59, 89, 152);
+    @extend %social-icon-hover;
+  }
+}
+.icon-13 {
+  color: rgb(36, 41, 46); // IE8
+  fill: rgb(36, 41, 46);
+  &:hover {
+    background: rgb(36, 41, 46);
+    @extend %social-icon-hover-git;
+  }
+}
+.icon-17 {
+  color: rgb(59, 89, 152); // IE8
+  fill: rgb(59, 89, 152);
+  &:hover {
+    background: rgb(59, 89, 152);
+    @extend %social-icon-hover-git;
+  }
+}
+
+.socials {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.social__item {
+  height: 26px; // IE8
+  height: 2.6rem;
+  width: 26px; // IE8
+  width: 2.6rem;
+}
+.socials__link {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  &_fb {
+    background-image: url("/image/icons/fb.png");
+  }
+  &_git {
+    background-image: url("/image/icons/gh.png");
+  }
+  &_in {
+    background-image: url("/image/icons/svg/in.svg");
+  }
+}

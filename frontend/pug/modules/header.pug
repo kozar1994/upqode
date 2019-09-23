@@ -1,0 +1,48 @@
+header.header 
+  .header__top
+    .header__top-container#navbar
+      .logo.logo-header
+        img(src="image/logo.svg", alt="logo")
+      
+      naw.header__naw
+        a(href="#").header__naw-items Home
+        a(href="#").header__naw-items Services
+        a(href="#").header__naw-items Team
+        a(href="#").header__naw-items Contact Us
+      .mobole__naw
+        input(type="checkbox" id="overlay-input")
+        label(for="overlay-input" id="overlay-button")
+          span
+        #overlay
+          ul
+            li
+              a(href="#").header__naw-items Home
+            li
+              a(href="#").header__naw-items Services
+            li
+              a(href="#").header__naw-items Team
+            li
+              a(href="#").header__naw-items Contact Us
+  div.owl-carousel.owl-theme
+    .slider__item
+      //- .bg-video
+      //-   video(autoplay muted loop).bg-video__content
+      //-     source(src="./image/video/video-1.mp4" type="video/mp4")
+      .slider__slogan Mileage Made Simple
+      .slider__little-logan Motivation And Your Personal Vision An Unbeatable Force
+      button.btn.btn--green Start Free Trial
+    .slider__item
+      //- .bg-video
+      //-   video(autoplay muted loop).bg-video__content
+      //-     source(src="./image/video/video-2.mp4" type="video/mp4")
+      .slider__slogan Mileage Made Simple
+      .slider__little-logan Motivation And Your Personal Vision An Unbeatable Force
+      button.btn.btn--green Start Free Trial
+    .slider__item
+      //- .bg-video
+      //-   video(autoplay muted loop).bg-video__content
+      //-     source(src="./image/video/video-3.mp4" type="video/mp4")
+      .slider__slogan Mileage Made Simple
+      .slider__little-logan Motivation And Your Personal Vision An Unbeatable Force
+      button.btn.btn--green Start Free Trial
+      

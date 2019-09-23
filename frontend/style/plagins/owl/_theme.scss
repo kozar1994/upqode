@@ -1,0 +1,138 @@
+
+.owl-item {
+	min-height: 100vh;  
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, .6) 11.29%, rgba(5, 13, 29, .1) 90.3%);
+  background-size: cover;
+  background-position: top;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, .6) 11.29%, rgba(5, 13, 29, .1) 90.3%);
+  background-size: cover;
+  background-position: top;
+}
+
+.slider__slogan {
+  margin-top: 29.65rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9rem;
+  line-height: 100px;
+  text-align: center;
+   //word-spacing: .2rem;
+	letter-spacing: .3rem;
+	color: #FFFFFF;
+	@include respond(phone) { // width < 1200?
+		font-size: 6rem;
+		margin-top: 19.65rem;
+		padding: 9rem 2rem;
+	}
+}
+
+.slider__little-logan {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin-top: 2.5rem;
+  text-align: center;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	@include respond(phone) { // width < 1200?
+		margin-top: -5rem;		
+	}
+}
+
+.owl-theme {
+	// Styling Next and Prev buttons
+	position: relative;
+	.owl-nav {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+		position: absolute;
+		left: 0;
+		top: 40%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 5%;
+
+		[class*='owl-'] {
+			color: $nav-color;
+			font-size: $nav-font-size;
+			margin: $nav-margin;
+			padding: $nav-padding;
+			background: $nav-background;
+			display: inline-block;
+			cursor: pointer;
+			border-radius: 3px;
+			outline: none;
+			&:hover {
+				color:$nav-color-hover;
+				text-decoration: none;
+			}
+		}
+		.disabled {
+			opacity: $nav-disabled-opacity;
+			cursor: default;
+		}
+		.owl-prev, .owl-next {			
+			font-size: 8rem !important;
+		}
+	}
+
+	// Styling dots
+	.owl-nav.disabled + .owl-dots {
+		margin-top: 10px;
+	}
+
+	.owl-dots {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+		position: absolute;
+    /* left: 0; */
+    bottom: 8%;
+    width: 100%;
+
+		.owl-dot {
+			position: relative;
+			display: inline-block;
+			width: 2.108rem;
+			height: 2.108rem;
+			transition: all .3s;
+			outline: none;
+
+			&:not(:last-child) {
+				margin-right: 1.6rem;
+			}
+
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: inline-block;
+				background-color: #FFFFFF;
+				width: 1.265rem;
+				height: 1.265rem;
+				border-radius: 50%;
+			}
+
+			&.active,
+			&:hover {
+				span {
+					background-color: $green;
+				}
+				border: 1px solid $green;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+//@import "../../node_modules/normalize-scss/fork-versions/default/normalize";
+
+//Настройки
+@import "helpers/mixins";
+
+@import "var";
+@import "icon";
+@import "fonts";
+@import "global";
+
+//helpers
+@import "bottom";
+//plagin
+@import "plagins/owl/owl.carousel.scss";
+@import "plagins/owl/owl.theme.default.scss";
+
+//Секції
+@import "section/header";
+@import "section/teams";
+@import "section/index";
+@import "section/footer";
