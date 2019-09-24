@@ -155,7 +155,7 @@ $(document).ready(function(){
         }else{
             nawNextImage.classList.remove("teams-slider__photo_item-hide");
             nawNextImage.src = `image/teams/teams-${countActiveSlider+2}.png`;
-            nawNextName.textContent = allItemsSlider[countActiveSlider].childNodes[1].textContent;            
+            nawNextName.textContent = allItemsSlider[countActiveSlider+1].childNodes[1].textContent;            
         }
     }
 
