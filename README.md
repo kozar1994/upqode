@@ -8,7 +8,6 @@ Install:
 When the gulp command is started, a public folder will be created with the project generated
 
 Image:
-https://github.com/kozar1994/upqode/blob/master/Screenshot_1.png
 ![Image alt](https://github.com/kozar1994/upqode/raw/master/Screenshot_1.png)
 ![Image alt](https://github.com/kozar1994/upqode/raw/master/Screenshot_2.png)
 ![Image alt](https://github.com/kozar1994/upqode/raw/master/Screenshot_3.png)
